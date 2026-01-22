@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Receipt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadReceipt()">
+
+<div class="receipt">
+<h2>Hostel Booking Receipt</h2>
+
+<p><b>Name:</b> <span id="rName"></span></p>
+<p><b>Roll:</b> <span id="rRoll"></span></p>
+<p><b>Email:</b> <span id="rEmail"></span></p>
+<p><b>Hostel:</b> <span id="rHostel"></span></p>
+<p><b>Room:</b> <span id="rRoom"></span></p>
+<p><b>Amount:</b> ₹5000</p>
+
+<button onclick="printReceipt()">Print / Download</button>
+<button class="back-btn" onclick="window.location.href='index.html'">
+Home
+</button>
+</div>
+
+<!-- ⚠️ THIS LINE IS MUST -->
+<script src="script.js"></script>
+
+</body>
+</html>

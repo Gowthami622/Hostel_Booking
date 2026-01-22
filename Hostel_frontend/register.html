@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration</h2>
+
+    <!-- NAME -->
+    <label class="form-label">
+        Student Name <span class="req">*</span>
+        <span class="tick" id="nameTick">✔</span>
+    </label>
+    <input type="text" id="nameInput" oninput="validateName()">
+    <small class="error" id="nameError"></small>
+
+    <!-- ROLL -->
+    <label class="form-label">
+        Roll Number <span class="req">*</span>
+        <span class="tick" id="rollTick">✔</span>
+    </label>
+    <input type="text" id="rollInput" oninput="validateRoll()">
+    <small class="error" id="rollError"></small>
+
+    <!-- EMAIL -->
+    <label class="form-label">
+        College Email <span class="req">*</span>
+        <span class="tick" id="emailTick">✔</span>
+    </label>
+    <input type="email" id="emailInput" oninput="validateEmail()">
+    <small class="error" id="emailError"></small>
+
+    <!-- PASSWORD -->
+    <label class="form-label">
+        Password <span class="req">*</span>
+        <span class="tick" id="passTick">✔</span>
+    </label>
+    <input type="password" id="passInput" oninput="validatePass()">
+    <small class="error" id="passError"></small>
+
+    <button class="back-btn" onclick="history.back()">← Back</button>
+    <button onclick="continuePay()">Continue →</button>
+</div>
+
+</body>
+</html>
